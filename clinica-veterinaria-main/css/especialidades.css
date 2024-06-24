@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    min-height: 100vh; /* Garante que o body tenha pelo menos a altura da viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.especialidades {
+    padding: 4rem;
+    flex: 1; /* Faz com que o main (.especialidades) ocupe todo o espaço disponível */
+}
+
+.titles {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.titles a {
+    color: #2b4cc1;
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+
+.titles i {
+    font-size: 2.4rem;
+    margin-right: 1rem;
+    color: #2b4cc1;
+}
+
+.titles h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-left: 1rem;
+    color: #2b4cc1;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.div-especialidade {
+    width: 30rem;
+    padding: 2rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border-radius: 1.2rem;
+    background-color: #fff;
+    box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.div-especialidade img {
+    width: 100%;
+    border-radius: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.div-especialidade h2 {
+    font-size: 2.4rem;
+    color: #2b4cc1;
+    margin-bottom: 1rem;
+}
+
+.div-especialidade p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #333;
+}
+
+.page-footer {
+    background-color: #2b4cc1;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto; /* Empurra o footer para a parte inferior da página */
+}

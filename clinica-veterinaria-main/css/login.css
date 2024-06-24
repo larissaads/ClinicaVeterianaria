@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --default-border: .1rem solid rgba(0, 0, 0, 0.15);
+    --default-border-radius: 1.2rem;
+    --blue: #2b4cc1;
+    --input-background: #f5f5f5;
+    --input-border: #ccc;
+    --input-focus-border: #2b4cc1;
+}
+
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+header {
+    background-color: #2b4cc1;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.page-footer {
+    background-color: #2b4cc1;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 2rem;
+}
+
+.mn-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 60rem;
+    border: var(--default-border);
+    border-radius: var(--default-border-radius);
+    padding: 4.4rem 5.7rem;
+    background-color: #fff;
+    box-shadow: 0 0.4rem 1.6rem rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+aside h1 {
+    margin-top: 1rem;
+    font-size: 6.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+aside h1 span {
+    font-weight: 900;
+    color: var(--blue);
+}
+
+aside img {
+    height: 30rem;
+}
+
+main header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+main header a {
+    color: var(--blue);
+    font-size: 2.4rem;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+main header h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+main header h2 span {
+    color: var(--blue);
+}
+
+form {
+    width: 100%;
+}
+
+.input-container {
+    margin-bottom: 2rem;
+}
+
+.input-container label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: var(--input-border) 1px solid;
+    border-radius: var(--default-border-radius);
+    background-color: var(--input-background);
+    overflow: hidden;
+}
+
+.input-group i {
+    font-size: 2rem;
+    padding: 1rem;
+    color: var(--input-border);
+}
+
+.input-group input {
+    flex: 1;
+    height: 5.5rem;
+    border: none;
+    padding: .6rem;
+    font-size: 1.6rem;
+    background-color: var(--input-background);
+}
+
+.input-group input:focus {
+    outline: none;
+    border: 1px solid var(--input-focus-border);
+    background-color: white;
+}
+
+.input-group input::placeholder {
+    font-size: 1.6rem;
+    color: #aaa;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.actions a {
+    font-size: 2.4rem;
+    height: 5.5rem;
+    border-radius: var(--default-border-radius);
+    text-decoration: none;
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.actions a:hover {
+    transform: scale(1.05);
+}
+
+.esqueci-senha {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.esqueci-senha a {
+    font-size: 1.8rem;
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.esqueci-senha a:hover {
+    text-decoration: underline;
+}
